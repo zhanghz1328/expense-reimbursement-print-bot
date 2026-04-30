@@ -1,0 +1,22 @@
+{
+  "name": "expense-reimbursement-print-bot",
+  "version": "1.0.0",
+  "description": "费用报销系统电子单据自动打印",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test tests/*.test.js",
+    "migrate": "node src/db/migrate.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.0",
+    "better-sqlite3": "^11.0.0",
+    "express": "^4.19.0",
+    "js-yaml": "^4.1.0",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.0"
+  },
+  "devDependencies": {}
+}

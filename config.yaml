@@ -1,0 +1,38 @@
+# 报销系统 API 配置
+api:
+  baseUrl: "https://expense-api.company.com"
+  username: "your-username"
+  password: "your-password"
+  fetchSchedules:
+    - "0 8 * * *"   # 每天 8:00
+    - "0 12 * * *"  # 每天 12:00
+    - "0 18 * * *"  # 每天 18:00
+
+# 打印服务配置
+printServer:
+  url: "http://print-server.company.com:631"
+  queueName: "HP-LaserJet-Professional"
+  timeout: 60000  # 60秒
+
+# 通知配置
+notification:
+  email:
+    host: "smtp.qq.com"
+    port: 587
+    user: "your-email@qq.com"
+    pass: "your-auth-code"
+    to: "zhang.hz@comlan.com"
+  teams:
+    webhookUrl: "https://outlook.office.com/webhook/your-webhook-url"
+
+# 数据库配置
+database:
+  path: "./data/tasks.db"
+
+# Web 服务配置
+web:
+  port: 3000
+
+# 文件缓存
+cache:
+  dir: "./cache"
